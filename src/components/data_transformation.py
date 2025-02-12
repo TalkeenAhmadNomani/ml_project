@@ -16,7 +16,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -39,13 +39,12 @@ class DataTransformation:
 
             num_pipeline= Pipeline(
                 steps=[
-                    #  handling missing values and doing standard scaler on training datas
                 ("imputer",SimpleImputer(strategy="median")),
                 ("scaler",StandardScaler())
 
                 ]
             )
-# handling missing vlues in categories , replacing with most frequent
+
             cat_pipeline=Pipeline(
 
                 steps=[
