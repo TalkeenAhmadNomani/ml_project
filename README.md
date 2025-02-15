@@ -13,5 +13,5 @@ This project is a **Machine Learning-based Student Marks Prediction System** tha
 ## Tech Stack
 - **Machine Learning:** Scikit-learn (Decision Trees, Linear Regression, Random Forest, etc.)
 - **Backend:** Flask
-- **Frontend:** HTML, CSS, Bootstrap
+- **Frontend:** HTML, CSS.
 - **Libraries Used:** Pandas, NumPy, Scikit-learn, Flask
