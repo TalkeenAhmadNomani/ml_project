@@ -14,17 +14,14 @@ class PredictPipeline:
             model_path = os.path.join("artifacts", "model.pkl")
             preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
 
-            # Check if files exist
-            print("Model exists:", os.path.exists(model_path))
-            print("Preprocessor exists:", os.path.exists(preprocessor_path))
+       
 
             if not os.path.exists(model_path) or not os.path.exists(preprocessor_path):
                 raise FileNotFoundError("Model or Preprocessor file not found in 'artifacts' directory.")
 
-            print("Before Loading Model & Preprocessor")
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
-            print("After Loading Model & Preprocessor")
+       
 
             data_scaled = preprocessor.transform(features)
             preds = model.predict(data_scaled)
