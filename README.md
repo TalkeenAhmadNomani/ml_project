@@ -2,7 +2,7 @@
 # Student Marks Prediction
 
 ## Overview
-This project is a **Machine Learning-based Student Marks Prediction System** that uses multiple models internally to predict student marks based on different parameters. The model with the **best accuracy** is selected dynamically for prediction. The **Flask framework** is used to create a user-friendly **web interface** for interaction.
+This project is a **Machine Learning-based Student Marks Prediction System** that uses multiple models internally to predict student marks based on different parameters. The model with the **best accuracy** is selected dynamically for prediction. 
 
 ## Features
 - Utilizes **multiple ML models** to ensure the best prediction accuracy.
